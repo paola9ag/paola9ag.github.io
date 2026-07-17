@@ -3,96 +3,517 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Construcción</title>
+    <meta name="description" content="Perfil profesional de Paola - Química especializada en análisis instrumental y metodologías analíticas">
+    <meta name="theme-color" content="#0d47a1">
+    <title>Paola - Química & Análisis Instrumental</title>
     <style>
-        /* Estilos para centrar todo en la pantalla */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f6f8fa;
-            color: #24292e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
             box-sizing: border-box;
         }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            border: 1px solid #e1e4e8;
-            max-width: 450px;
-            width: 100%;
+        
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #1565c0;
+            --accent-color: #ff6f00;
+            --text-dark: #1a1a1a;
+            --text-light: #555555;
+            --bg-light: #f5f5f5;
+            --border-color: #e0e0e0;
         }
-        .icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            display: inline-block;
-            animation: bounce 2s infinite;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fafafa;
         }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #24292e;
+        
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        p {
-            color: #586069;
-            font-size: 1.1rem;
-            line-height: 1.5;
-            margin-bottom: 30px;
+        
+        nav .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .bar {
-            background-color: #e1e4e8;
-            height: 8px;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 20px;
+        
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
-        .progress {
-            background-color: #0366d6; /* Azul GitHub */
-            height: 100%;
-            width: 35%; /* Puedes cambiar el porcentaje aquí */
-            border-radius: 4px;
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
         }
-        footer {
-            font-size: 0.85rem;
-            color: #6a737d;
-        }
-        a {
-            color: #0366d6;
+        
+        nav a {
+            color: white;
             text-decoration: none;
+            transition: opacity 0.3s;
+            font-size: 0.95rem;
         }
-        a:hover {
-            text-decoration: underline;
+        
+        nav a:hover {
+            opacity: 0.8;
         }
-
-        /* Animación simple para el conito */
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        
+        .hero p {
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #e55100;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+        
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+        
+        .highlight {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        
+        .skill-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.15rem;
+        }
+        
+        .skill-card ul {
+            list-style: none;
+        }
+        
+        .skill-card li {
+            padding: 0.4rem 0;
+            color: var(--text-light);
+        }
+        
+        .skill-card li::before {
+            content: '✓ ';
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        /* Experience Section */
+        .experience-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .experience-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-item .role {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-item p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Standards & Compliance */
+        .standards-container {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+        
+        .standard-badge {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            border-top: 3px solid var(--accent-color);
+            transition: transform 0.3s;
+        }
+        
+        .standard-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .standard-badge .code {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .standard-badge .description {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: opacity 0.3s;
+        }
+        
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .standards-container {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Sitio en Construcción</h1>
-        <p>¡Hola! Estoy armando algo genial aquí. Regresa pronto para ver las novedades.</p>
-        
-        <!-- Barra de progreso visual -->
-        <div class="bar">
-            <div class="progress"></div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Paola</div>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#expertise">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </div>
-        
-        <footer>
-            <p>Alojado en <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
-        </footer>
-    </div>
-
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Química & Análisis Instrumental</h1>
+            <p class="subtitle">Especialista en Metodologías Analíticas y Control de Calidad</p>
+            <p>Con Máster en Ciencias y Tecnologías Analíticas y Bioanalíticas, combinando rigor científico con excelencia operativa bajo normativas ISO internacionales.</p>
+            <a href="#contact" class="cta-button">Contáctame</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Trayectoria Profesional</h3>
+                    <p>Soy química especializada en <span class="highlight">análisis instrumental</span> con formación avanzada en ciencias y tecnologías analíticas y bioanalíticas. Mi experiencia abarca la aplicación de técnicas instrumentales complejas en sectores ambiental y clínico.</p>
+                    
+                    <h3>Fortalezas Clave</h3>
+                    <p>✓ <strong>Validación de métodos analíticos:</strong> Diseño, implementación y documentación de protocolos de validación rigurosos.</p>
+                    <p>✓ <strong>Técnicas avanzadas:</strong> Cromatografía líquida (HPLC) y de gases (GC) acopladas a espectrometría de masas (MS).</p>
+                    <p>✓ <strong>Interpretación de datos:</strong> Análisis profundo de resultados complejos y generación de conclusiones técnicas fundamentadas.</p>
+                    <p>✓ <strong>Cumplimiento normativo:</strong> Aplicación de estándares ISO/IEC 17025, ISO 15189 e ISO 9001.</p>
+                </div>
+                <div class="about-text">
+                    <h3>Filosofía Profesional</h3>
+                    <p>Combino el rigor científico con una <span class="highlight">orientación operativa</span> enfocada en la calidad, la resolución de problemas y la mejora continua. Cada proyecto se aborda con precisión analítica y compromiso con la excelencia.</p>
+                    
+                    <h3>Sectores</h3>
+                    <p><strong>Ambiental:</strong> Análisis de contaminantes, trazas y residuos en matrices complejas.</p>
+                    <p><strong>Clínico:</strong> Control de calidad en metodologías bioanalíticas y asuntos regulatorios.</p>
+                    <p><strong>Tecnológico:</strong> Desarrollo y optimización de protocolos analíticos de última generación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Expertise Section -->
+    <section id="expertise">
+        <div class="container">
+            <h2>Áreas de Especialización</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🔬 Técnicas Analíticas</h3>
+                    <ul>
+                        <li>Cromatografía Líquida de Alta Resolución (HPLC)</li>
+                        <li>Cromatografía de Gases (GC)</li>
+                        <li>Espectrometría de Masas (MS)</li>
+                        <li>Acoplamiento GC-MS / LC-MS</li>
+                        <li>Análisis cualitativo y cuantitativo</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>✓ Validación & Calidad</h3>
+                    <ul>
+                        <li>Validación de métodos analíticos</li>
+                        <li>Asuntos de Calidad (QA)</li>
+                        <li>Control de Calidad (QC)</li>
+                        <li>Estudios de estabilidad</li>
+                        <li>Aseguramiento metrológico</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>📋 Normativas & Compliance</h3>
+                    <ul>
+                        <li>ISO/IEC 17025:2017</li>
+                        <li>ISO 15189:2012</li>
+                        <li>ISO 9001:2015</li>
+                        <li>Procedimientos regulatorios</li>
+                        <li>Documentación técnica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Standards Section -->
+    <section>
+        <div class="container">
+            <h2>Certificaciones & Normativas</h2>
+            <div class="standards-container">
+                <div class="standard-badge">
+                    <div class="code">ISO/IEC 17025</div>
+                    <div class="description">Laboratorios de ensayo y calibración</div>
+                </div>
+                <div class="standard-badge">
+                    <div class="code">ISO 15189</div>
+                    <div class="description">Laboratorios clínicos</div>
+                </div>
+                <div class="standard-badge">
+                    <div class="code">ISO 9001</div>
+                    <div class="description">Sistemas de Gestión de Calidad</div>
+                </div>
+                <div class="standard-badge">
+                    <div class="code">GLP</div>
+                    <div class="description">Buenas Prácticas de Laboratorio</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section>
+        <div class="container">
+            <h2>Experiencia</h2>
+            <div class="experience-item">
+                <h3>Análisis Instrumental Avanzado</h3>
+                <div class="role">Especialista en Cromatografía y Espectrometría de Masas</div>
+                <p>Desarrollo e implementación de métodos analíticos utilizando HPLC, GC y espectrometría de masas acoplada para caracterización de compuestos complejos en matrices ambiental y clínica.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Validación de Métodos</h3>
+                <div class="role">Responsable de Asuntos de Calidad Analítica</div>
+                <p>Diseño y ejecución de protocolos de validación de métodos analíticos conforme a directrices internacionales. Evaluación de parámetros de rendimiento: selectividad, sensibilidad, linealidad, precisión, exactitud y robustez.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Cumplimiento Normativo</h3>
+                <div class="role">Gestor de Compliance ISO</div>
+                <p>Coordinación y mantenimiento del cumplimiento de normativas ISO/IEC 17025, ISO 15189 e ISO 9001. Preparación de auditorías, documentación técnica y procedimientos operacionales estándar.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Resolución de Problemas</h3>
+                <div class="role">Analista de Troubleshooting</div>
+                <p>Investigación de desvíos analíticos, diagnóstico de causas raíz y implementación de acciones correctivas. Mejora continua de procesos y optimización de protocolos existentes.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Conecta Conmigo</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Si buscas a alguien apasionado por la excelencia analítica y el cumplimiento normativo, me encantaría hablar contigo.</p>
+            <div style="text-align: center;">
+                <a href="mailto:paola9ag@gmail.com" class="cta-button">Enviarme un Email</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Paola - Química & Análisis Instrumental</p>
+        <p>Especialista en metodologías analíticas y control de calidad</p>
+        <div class="social-links">
+            <a href="https://github.com/paola9ag" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/paola9ag" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
