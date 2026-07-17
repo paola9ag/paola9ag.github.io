@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio en Construcción</title>
+    <style>
+        /* Estilos para centrar todo en la pantalla */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f6f8fa;
+            color: #24292e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e1e4e8;
+            max-width: 450px;
+            width: 100%;
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #24292e;
+        }
+        p {
+            color: #586069;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        .bar {
+            background-color: #e1e4e8;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .progress {
+            background-color: #0366d6; /* Azul GitHub */
+            height: 100%;
+            width: 35%; /* Puedes cambiar el porcentaje aquí */
+            border-radius: 4px;
+        }
+        footer {
+            font-size: 0.85rem;
+            color: #6a737d;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 
+        /* Animación simple para el conito */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">🚧</div>
+        <h1>Sitio en Construcción</h1>
+        <p>¡Hola! Estoy armando algo genial aquí. Regresa pronto para ver las novedades.</p>
+        
+        <!-- Barra de progreso visual -->
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+        
+        <footer>
+            <p>Alojado en <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
