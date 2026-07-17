@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paola9ag.github.io/sitemap.xml

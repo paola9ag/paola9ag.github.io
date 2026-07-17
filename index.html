@@ -5,461 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Perfil profesional de Paola - Química especializada en análisis instrumental y metodologías analíticas">
     <meta name="theme-color" content="#0d47a1">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Paola - Química & Análisis Instrumental">
+    <meta property="og:description" content="Especialista en Metodologías Analíticas y Control de Calidad. +5 años de experiencia en laboratorios clínicos e industriales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paola9ag.github.io/">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Paola - Química & Análisis Instrumental">
+    <meta name="twitter:description" content="Especialista en Metodologías Analíticas y Control de Calidad. +5 años de experiencia.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://paola9ag.github.io/">
+
     <title>Paola - Química & Análisis Instrumental</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --primary-color: #0d47a1;
-            --secondary-color: #1565c0;
-            --accent-color: #ff6f00;
-            --text-dark: #1a1a1a;
-            --text-light: #555555;
-            --bg-light: #f5f5f5;
-            --border-color: #e0e0e0;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: #fafafa;
-        }
-        
-        /* Navigation */
-        nav {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        nav .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-            font-size: 0.95rem;
-        }
-        
-        nav a:hover {
-            opacity: 0.8;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-        
-        .hero .subtitle {
-            font-size: 1.25rem;
-            opacity: 0.95;
-            margin-bottom: 1.5rem;
-            font-weight: 300;
-        }
-        
-        .hero p {
-            font-size: 1.05rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            opacity: 0.9;
-            line-height: 1.7;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        
-        .cta-button:hover {
-            background-color: #e55100;
-        }
-        
-        /* Section Styles */
-        section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        section:last-child {
-            border-bottom: none;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: var(--primary-color);
-            position: relative;
-            padding-bottom: 1rem;
-        }
-        
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-        }
-        
-        /* About Section */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        
-        .about-text h3 {
-            color: var(--secondary-color);
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .about-text p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-            color: var(--text-light);
-        }
-        
-        .highlight {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.2em 0.4em;
-            border-radius: 3px;
-            font-weight: 600;
-        }
-        
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        
-        .skill-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-left: 4px solid var(--accent-color);
-        }
-        
-        .skill-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-        }
-        
-        .skill-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.15rem;
-        }
-        
-        .skill-card ul {
-            list-style: none;
-        }
-        
-        .skill-card li {
-            padding: 0.4rem 0;
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-        
-        .skill-card li::before {
-            content: '✓ ';
-            color: var(--accent-color);
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-        
-        /* Experience Section */
-        .experience-item {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--secondary-color);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .experience-item h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.3rem;
-            font-size: 1.15rem;
-        }
-        
-        .experience-period {
-            color: var(--accent-color);
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        .experience-item .role {
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-            font-size: 0.95rem;
-        }
-        
-        .experience-item .location {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-        
-        .experience-item p {
-            color: var(--text-light);
-            line-height: 1.7;
-            margin-bottom: 0.5rem;
-        }
-        
-        .experience-item ul {
-            list-style: none;
-            margin-top: 0.8rem;
-        }
-        
-        .experience-item li {
-            padding: 0.3rem 0;
-            color: var(--text-light);
-            margin-left: 1rem;
-        }
-        
-        .experience-item li::before {
-            content: '• ';
-            color: var(--accent-color);
-            font-weight: bold;
-            margin-right: 0.5rem;
-            margin-left: -1rem;
-        }
-        
-        /* Education Section */
-        .education-item {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--accent-color);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        
-        .education-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .education-item h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.3rem;
-            font-size: 1.15rem;
-        }
-        
-        .education-period {
-            color: var(--accent-color);
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        .education-item .institution {
-            color: var(--secondary-color);
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-        }
-        
-        .education-item .location {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: 0.8rem;
-        }
-        
-        .relevant-courses {
-            background: var(--bg-light);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-top: 0.8rem;
-        }
-        
-        .relevant-courses strong {
-            color: var(--secondary-color);
-        }
-        
-        .relevant-courses p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            margin: 0.5rem 0;
-        }
-        
-        /* Standards & Compliance */
-        .standards-container {
-            background: var(--bg-light);
-            padding: 2rem;
-            border-radius: 8px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            text-align: center;
-        }
-        
-        .standard-badge {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            border-top: 3px solid var(--accent-color);
-            transition: transform 0.3s;
-        }
-        
-        .standard-badge:hover {
-            transform: scale(1.05);
-        }
-        
-        .standard-badge .code {
-            font-weight: 700;
-            color: var(--primary-color);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .standard-badge .description {
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-        
-        .social-links {
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            transition: opacity 0.3s;
-        }
-        
-        .social-links a:hover {
-            opacity: 0.8;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav ul {
-                gap: 1rem;
-                font-size: 0.9rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.6rem;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .standards-container {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            }
-            
-            .experience-header,
-            .education-header {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Skip to content -->
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Navegación principal">
         <div class="container">
             <div class="logo">Paola</div>
             <ul>
@@ -471,288 +44,294 @@
             </ul>
         </div>
     </nav>
-    
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Química & Análisis Instrumental</h1>
-            <p class="subtitle">Especialista en Metodologías Analíticas y Control de Calidad</p>
-            <p>Con Máster en Ciencias y Tecnologías Analíticas y Bioanalíticas, combinando rigor científico con excelencia operativa bajo normativas ISO internacionales. +5 años de experiencia en laboratorios clínicos e industriales.</p>
-            <a href="#contact" class="cta-button">Contáctame</a>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Mí</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>Trayectoria Profesional</h3>
-                    <p>Soy química especializada en <span class="highlight">análisis instrumental</span> con formación avanzada en ciencias y tecnologías analíticas y bioanalíticas. Mi experiencia abarca la aplicación de técnicas instrumentales complejas en sectores clínico e industrial, con 5+ años trabajando en laboratorios de clase mundial.</p>
-                    
-                    <h3>Fortalezas Clave</h3>
-                    <p>✓ <strong>Validación de métodos analíticos:</strong> Diseño, implementación y documentación de protocolos de validación rigurosos.</p>
-                    <p>✓ <strong>Técnicas avanzadas:</strong> LC-MS/MS, LC-MS, HPLC-DAD, HPLC-PDA, GC-MS, CG-FID, Absorción Atómica.</p>
-                    <p>✓ <strong>Interpretación de datos:</strong> Análisis profundo de resultados complejos y generación de conclusiones técnicas fundamentadas.</p>
-                    <p>✓ <strong>Cumplimiento normativo:</strong> Aplicación de estándares ISO/IEC 17025, ISO 15189 e ISO 9001.</p>
-                </div>
-                <div class="about-text">
-                    <h3>Filosofía Profesional</h3>
-                    <p>Combino el rigor científico con una <span class="highlight">orientación operativa</span> enfocada en la calidad, la resolución de problemas y la mejora continua. Cada proyecto se aborda con precisión analítica y compromiso con la excelencia.</p>
-                    
-                    <h3>Sectores</h3>
-                    <p><strong>Clínico:</strong> Análisis de muestras biológicas, diagnóstico clínico, bioensayos.</p>
-                    <p><strong>Ambiental:</strong> Análisis fisicoquímicos, agua potable, aguas residuales, contaminantes.</p>
-                    <p><strong>Industrial:</strong> Control de calidad, biopolímeros, procesos de optimización.</p>
-                </div>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Presentación">
+            <div class="container">
+                <h1>Química & Análisis Instrumental</h1>
+                <p class="subtitle">Especialista en Metodologías Analíticas y Control de Calidad</p>
+                <p>Con Máster en Ciencias y Tecnologías Analíticas y Bioanalíticas, combinando rigor científico, analítico y con excelencia operativa bajo normativas ISO 17025. +4 años de experiencia en laboratorios clínicos e industriales.</p>
+                <a href="#contact" class="cta-button">Contáctame</a>
             </div>
-        </div>
-    </section>
-    
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Educación</h2>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <div>
-                        <h3>Máster Universitario en Ciencias y Tecnologías Analíticas y Bioanalíticas</h3>
-                        <div class="institution">Universidad Carlos III de Madrid (UC3M) - Interuniversitario</div>
-                        <div class="location">Madrid, España</div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">Sobre Mí</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Trayectoria Profesional</h3>
+                        <p>Soy química especializada en <span class="highlight">análisis instrumental</span> con formación avanzada en ciencias y tecnologías analíticas y bioanalíticas. Mi experiencia abarca la aplicación de técnicas instrumentales complejas en sectores clínico e industrial, con 5+ años de experiencia en laboratorios.</p>
+
+                        <h3>Fortalezas Clave</h3>
+                        <p><strong>Validación de métodos analíticos:</strong> Diseño, implementación y documentación de protocolos de validación rigurosos.</p>
+                        <p><strong>Técnicas avanzadas:</strong> LC-MS/MS, LC-MS, HPLC-DAD, HPLC-PDA, GC-MS, CG-FID, Absorción Atómica.</p>
+                        <p><strong>Interpretación de datos:</strong> Análisis profundo de resultados complejos y generación de conclusiones técnicas fundamentadas.</p>
+                        <p><strong>Cumplimiento normativo:</strong> Aplicación de estándares ISO/IEC 17025, ISO 15189 e ISO 9001.</p>
                     </div>
-                    <div class="education-period">2025-2026</div>
-                </div>
-                <div class="relevant-courses">
-                    <strong>Cursos relevantes:</strong>
-                    <p>Química Analítica, Bioanálisis, Nanomateriales, Electroquímica, Calidad para Laboratorios</p>
-                </div>
-            </div>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <div>
-                        <h3>Especialista en Análisis Químico Instrumental</h3>
-                        <div class="institution">Pontificia Universidad Javeriana</div>
-                        <div class="location">Bogotá, Colombia</div>
+                    <div class="about-text">
+                        <h3>Filosofía Profesional</h3>
+                        <p>Combino el rigor científico con una <span class="highlight">orientación operativa</span> enfocada en la calidad, la resolución de problemas y la mejora continua. Cada proyecto se aborda con precisión analítica y compromiso con la excelencia.</p>
+
+                        <h3>Sectores</h3>
+                        <p><strong>Clínico:</strong> Análisis de muestras biológicas, diagnóstico clínico, bioensayos.</p>
+                        <p><strong>Ambiental:</strong> Análisis fisicoquímicos, agua potable, aguas residuales, contaminantes.</p>
+                        <p><strong>Industrial:</strong> Control de calidad, biopolímeros, procesos de optimización.</p>
                     </div>
-                    <div class="education-period">2020-2021</div>
-                </div>
-                <div class="relevant-courses">
-                    <strong>Cursos relevantes:</strong>
-                    <p>Química Analítica, Química Orgánica, Análisis Instrumental, Cromatografía, Espectroscopia, Control de Calidad</p>
                 </div>
             </div>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <div>
-                        <h3>Licenciatura en Química</h3>
-                        <div class="institution">Universidad del Cauca</div>
-                        <div class="location">Popayán, Colombia</div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" aria-labelledby="education-heading">
+            <div class="container">
+                <h2 id="education-heading">Educación</h2>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Máster Universitario en Ciencias y Tecnologías Analíticas y Bioanalíticas</h3>
+                            <div class="institution">Universidad Carlos III de Madrid (UC3M) - Interuniversitario</div>
+                            <div class="location">Madrid, España</div>
+                        </div>
+                        <div class="education-period">2026</div>
                     </div>
-                    <div class="education-period">2011-2018</div>
-                </div>
-                <div class="relevant-courses">
-                    <strong>Cursos relevantes:</strong>
-                    <p>Química Orgánica, Química Inorgánica, Química Física, Química Analítica, Agroquímica, Bioquímica, Termodinámica, Química de Alimentos, Catálisis, Química Industrial</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Experiencia Laboral</h2>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3>Químico Investigación y Desarrollo</h3>
-                        <div class="location">Laboratorio Clínico Colcan, Bogotá, Colombia</div>
+                    <div class="relevant-courses">
+                        <strong>Cursos relevantes:</strong>
+                        <p>Química Analítica, Bioanálisis, Nanomateriales, Electroquímica, Calidad para Laboratorios</p>
                     </div>
-                    <div class="experience-period">2020-2025 (5 años)</div>
                 </div>
-                <p><strong>Responsabilidades destacadas:</strong></p>
-                <ul>
-                    <li>Análisis de muestras biológicas para contribuir al diagnóstico clínico de precisión</li>
-                    <li>Implementación, optimización y validación de métodos analíticos mediante cromatografía líquida y de gases</li>
-                    <li>Operación y mantenimiento preventivo de equipos de clase mundial: LC-MS/MS, LC-MS, HPLC-DAD, HPLC-PDA, GC-MS, CG-FID y Absorción Atómica</li>
-                    <li>Aplicación de criterios de trazabilidad, control de calidad, bioseguridad y Buenas Prácticas de Laboratorio (BPL)</li>
-                    <li>Generación de reportes técnicos y documentación de resultados analíticos</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3>Analista Fisicoquímico</h3>
-                        <div class="location">Biopolímeros Industriales LTD, Bogotá, Colombia</div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Especialista en Análisis Químico Instrumental</h3>
+                            <div class="institution">Pontificia Universidad Javeriana</div>
+                            <div class="location">Bogotá, Colombia</div>
+                        </div>
+                        <div class="education-period">2021</div>
                     </div>
-                    <div class="experience-period">2019-2020 (1 año)</div>
-                </div>
-                <p><strong>Responsabilidades destacadas:</strong></p>
-                <ul>
-                    <li>Aseguramiento del cumplimiento de normas locales mediante pruebas fisicoquímicas en agua potable y residual</li>
-                    <li>Análisis de parámetros complejos: pH, acidez, alcalinidad, cloruros, dureza, turbidez, conductividad, sólidos disueltos totales, nitrógeno orgánico total, amoníaco</li>
-                    <li>Planificación, ejecución y presentación de resultados de ensayos de aptitud y comparaciones interlaboratorio ante ONAC</li>
-                    <li>Implementación y mantenimiento de sistemas de gestión de calidad conforme a ISO 9001 e ISO/IEC 17025</li>
-                    <li>Preparación de estándares, curvas de calibración, controles y materiales de referencia certificados</li>
-                    <li>Elaboración y actualización de procedimientos normalizados de trabajo (PNT) y protocolos de validación</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3>Monitor Auxiliar Docente</h3>
-                        <div class="location">Universidad del Cauca, Popayán, Colombia</div>
+                    <div class="relevant-courses">
+                        <strong>Cursos relevantes:</strong>
+                        <p>Química Analítica, Química Orgánica, Análisis Instrumental, Cromatografía, Espectroscopia, Control de Calidad</p>
                     </div>
-                    <div class="experience-period">2015-2017, 2018</div>
                 </div>
-                <p><strong>Responsabilidades destacadas:</strong></p>
-                <ul>
-                    <li>Preparación de materiales, supervisión de experimentos y resolución de dudas a estudiantes</li>
-                    <li>Capacitación en manejo de equipos especializados para trabajos de investigación</li>
-                    <li>Operación y entrenamiento en cromatografía líquida (HPLC), cromatografía de gases (GC) e Infrarrojo (IR)</li>
-                    <li>Apoyo a profesores en clases magistrales sobre técnicas separativas y análisis instrumental</li>
-                </ul>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Grado en Química</h3>
+                            <div class="institution">Universidad del Cauca</div>
+                            <div class="location">Popayán, Colombia</div>
+                        </div>
+                        <div class="education-period">2018</div>
+                    </div>
+                    <div class="relevant-courses">
+                        <strong>Cursos relevantes:</strong>
+                        <p>Química Orgánica, Química Inorgánica, Química Física, Química Analítica, Agroquímica, Bioquímica, Termodinámica, Química de Alimentos, Catálisis, Química Industrial</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Áreas de Especialización</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>🔬 Técnicas Analíticas Avanzadas</h3>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading">Experiencia Laboral</h2>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Químico Investigación y Desarrollo</h3>
+                            <div class="location">Laboratorio Clínico Colcan, Bogotá, Colombia</div>
+                        </div>
+                        <div class="experience-period">2020-2025 (5 años)</div>
+                    </div>
+                    <p><strong>Responsabilidades destacadas:</strong></p>
                     <ul>
-                        <li>Cromatografía Líquida de Alta Resolución acoplado a espectrometría de masas (LC-MS) y tándem (LC-MS/MS)</li>
-                        <li>Cromatografía Líquida de Alta Resolución con detector conjunto de diodos (HPLC-DAD)</li>
-                        <li>Cromatografía Líquida de Alta Resolución con detector de fluorescencia (HPLC-PDA)</li>
-                        <li>Cromatografía de Gases con detector espectrometría de masas (GC-MS)</li>
-                        <li>Cromatografía de Gases con detector ionización por llama (GC-FID)</li>
-                        <li>Espectrometría de Absorción Atómica (EAA)</li>
-                        <li>Análisis cualitativo y cuantitativo</li>
+                        <li>Análisis de muestras biológicas para contribuir al diagnóstico clínico.</li>
+                        <li>Implementación, optimización y validación de métodos analíticos mediante cromatografía líquida y cromatografía de gases</li>
+                        <li>Operación y mantenimiento preventivo de equipos especializados: LC-MS/MS, LC-MS, HPLC-DAD, HPLC-PDA, GC-MS, CG-FID y Absorción Atómica</li>
+                        <li>Aplicación de criterios de trazabilidad, control de calidad y Buenas Prácticas de Laboratorio (BPL)</li>
+                        <li>Generación de reportes técnicos y documentación de resultados analíticos</li>
                     </ul>
                 </div>
-                
-                <div class="skill-card">
-                    <h3>✓ Validación & Calidad Analítica</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Analista Fisicoquímico</h3>
+                            <div class="location">Biopolímeros Industriales LTD, Bogotá, Colombia</div>
+                        </div>
+                        <div class="experience-period">2019-2020 (1 año)</div>
+                    </div>
+                    <p><strong>Responsabilidades destacadas:</strong></p>
                     <ul>
-                        <li>Validación de métodos analíticos</li>
-                        <li>Asuntos de Calidad (QA)</li>
-                        <li>Control de Calidad (QC)</li>
-                        <li>Estudios de estabilidad</li>
-                        <li>Ensayos de aptitud interlaboratorio</li>
-                        <li>Aseguramiento metrológico</li>
-                        <li>Trazabilidad analítica</li>
+                        <li>Aseguramiento del cumplimiento de normas locales mediante pruebas fisicoquímicas en agua potable y residual</li>
+                        <li>Análisis de parámetros complejos: pH, acidez, alcalinidad, cloruros, dureza, turbidez, conductividad, sólidos disueltos totales, nitrógeno orgánico total, amoníaco</li>
+                        <li>Participar en la planificación, ejecución y presentación de resultados de ensayos de aptitud y comparaciones interlaboratorio, como parte de los procesos de evaluación y seguimiento ante ONAC</li>
+                        <li>Implementación y mantenimiento de sistemas de gestión de calidad conforme a ISO 9001 e ISO/IEC 17025</li>
+                        <li>Preparación de estándares, curvas de calibración, controles y materiales de referencia certificados</li>
+                        <li>Elaboración y actualización de procedimientos normalizados de trabajo (PNT) y protocolos de validación</li>
                     </ul>
                 </div>
-                
-                <div class="skill-card">
-                    <h3>📋 Normativas & Compliance</h3>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Monitor Auxiliar Docente</h3>
+                            <div class="location">Universidad del Cauca, Popayán, Colombia</div>
+                        </div>
+                        <div class="experience-period">2015-2017, 2018</div>
+                    </div>
+                    <p><strong>Responsabilidades destacadas:</strong></p>
                     <ul>
-                        <li>ISO/IEC 17025:2017</li>
-                        <li>ISO 15189:2012 (Laboratorios clínicos)</li>
-                        <li>ISO 9001:2015</li>
-                        <li>Buenas Prácticas de Laboratorio (BPL/GLP)</li>
-                        <li>Procedimientos regulatorios</li>
-                        <li>Documentación técnica</li>
-                        <li>Bioseguridad</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>⚙️ Equipos & Instrumentación</h3>
-                    <ul>
-                        <li>LC-MS/MS (Cromatografía Líquida)</li>
-                        <li>LC-MS</li>
-                        <li>HPLC-DAD (Detector de Arreglo de Diodos)</li>
-                        <li>HPLC-PDA (Detector de Fluorescencia)</li>
-                        <li>GC-MS</li>
-                        <li>GC-FID</li>
-                        <li>Espectrometría de Absorción Atómica</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>🧪 Análisis Específicos</h3>
-                    <ul>
-                        <li>Análisis de muestras biológicas</li>
-                        <li>Análisis fisicoquímico de agua</li>
-                        <li>Análisis de agua potable y residual</li>
-                        <li>Parámetros de contaminación</li>
-                        <li>Estudios de estabilidad</li>
-                        <li>Preparación de estándares</li>
-                        <li>Calibración de equipos</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>📊 Gestión & Documentación</h3>
-                    <ul>
-                        <li>Procedimientos Normalizados de Trabajo (PNT)</li>
-                        <li>Protocolos de validación</li>
-                        <li>Reportes técnicos especializados</li>
-                        <li>Gestión de Calidad</li>
-                        <li>Mejora continua de procesos</li>
-                        <li>Capacitación técnica</li>
-                        <li>Manejo de sistemas LIMS</li>
+                        <li>Preparación de materiales, supervisión de experimentos y resolución de dudas a estudiantes</li>
+                        <li>Capacitación en manejo de equipos especializados para trabajos de investigación</li>
+                        <li>Operación y entrenamiento en cromatografía líquida (HPLC), cromatografía de gases (GC) e Infrarrojo (IR)</li>
+                        <li>Apoyo a profesores en clases magistrales sobre técnicas separativas y análisis instrumental</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Standards Section -->
-    <section>
-        <div class="container">
-            <h2>Certificaciones & Normativas</h2>
-            <div class="standards-container">
-                <div class="standard-badge">
-                    <div class="code">ISO/IEC 17025</div>
-                    <div class="description">Laboratorios de ensayo y calibración</div>
-                </div>
-                <div class="standard-badge">
-                    <div class="code">ISO 15189</div>
-                    <div class="description">Laboratorios clínicos</div>
-                </div>
-                <div class="standard-badge">
-                    <div class="code">ISO 9001</div>
-                    <div class="description">Sistemas de Gestión de Calidad</div>
-                </div>
-                <div class="standard-badge">
-                    <div class="code">BPL/GLP</div>
-                    <div class="description">Buenas Prácticas de Laboratorio</div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Áreas de Especialización</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Técnicas Analíticas Avanzadas</h3>
+                        <ul>
+                            <li>Cromatografía Líquida de Alta Resolución acoplado a espectrometría de masas (LC-MS) y tándem (LC-MS/MS)</li>
+                            <li>Cromatografía Líquida de Alta Resolución con detector conjunto de diodos (HPLC-DAD)</li>
+                            <li>Cromatografía Líquida de Alta Resolución con detector de fluorescencia (HPLC-PDA)</li>
+                            <li>Cromatografía de Gases con detector espectrometría de masas (GC-MS)</li>
+                            <li>Cromatografía de Gases con detector ionización por llama (GC-FID)</li>
+                            <li>Espectrometría de Absorción Atómica (EAA)
+                            </li>Analizador de mercurio por (DMA)
+                            <li>Análisis cualitativo y cuantitativo</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Validación & Calidad Analítica</h3>
+                        <ul>
+                            <li>Validación de métodos analíticos</li>
+                            <li>Trabajo en equipo y buena comunicación</li>
+                            <li>Control de Calidad (QC)</li>
+                            <li>Manejo y calibración de equipos de laboratorio</li>
+                            <li>Ensayos de aptitud interlaboratorio</li>
+                            <li>Aseguramiento metrológico</li>
+                            <li>Conocimiento en sistemas de gestión de información de laboratorio (LIMS)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Normativas & Compliance</h3>
+                        <ul>
+                            <li>ISO/IEC 17025:2017</li>
+                            <li>ISO 15189:2012 (Laboratorios clínicos)</li>
+                            <li>Fundamentos en ISO 9001:2008</li>
+                            <li>Buenas Prácticas de Laboratorio (BPL/GLP)</li>
+                            <li>Manejo de Procedimientos operativos estándar (POE)</li>
+                            <li>Metrología Química</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Equipos & Instrumentación</h3>
+                        <ul>
+                            <li>Cromatografía Líquida con espectrometría de masas (LC-MS) o en tándem  (LC-MS/MS)</li>
+                            <li>Cromatografía Líquida de alta resolución con Detector de Arreglo de Diodos(HPLC-DAD)</li>
+                            <li>Cromatografía Líquida de alta resolución con Detector de Fluorescencia (HPLC-PDA)</li>
+                            <li>Cromatografía de gases con espectrometría de masas (GC-MS) o con detector FID</li>
+                            <li>Espectroscopia de Absorción Atómica</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Análisis Específicos</h3>
+                        <ul>
+                            <li>Análisis de muestras biológicas</li>
+                            <li>Análisis fisicoquímico de agua</li>
+                            <li>Análisis de agua potable y residual</li>
+                            <li>Preparación de estándares</li>
+                            <li>Mantenimiento, calibración y manejo de equipos</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Gestión & Documentación</h3>
+                        <ul>
+                            <li>Procedimientos Normalizados de Trabajo (PNT)</li>
+                            <li>Protocolos de validación</li>
+                            <li>Reportes técnicos</li>
+                            <li>Gestión de Calidad</li>
+                            <li>Manejo de sistemas LIMS</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Conecta Conmigo</h2>
-            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Si buscas a alguien apasionado por la excelencia analítica, la innovación y el cumplimiento normativo, me encantaría hablar contigo.</p>
-            <div style="text-align: center;">
-                <a href="mailto:paola9ag@gmail.com" class="cta-button">Enviarme un Email</a>
+        </section>
+
+        <!-- Standards Section -->
+        <section aria-labelledby="standards-heading">
+            <div class="container">
+                <h2 id="standards-heading">Certificaciones & Normativas</h2>
+                <div class="standards-container">
+                    <div class="standard-badge">
+                        <div class="code">ISO/IEC 17025</div>
+                        <div class="description">Laboratorios de ensayo y calibración</div>
+                    </div>
+                    <div class="standard-badge">
+                        <div class="code">ISO 15189</div>
+                        <div class="description">Laboratorios clínicos</div>
+                    </div>
+                    <div class="standard-badge">
+                        <div class="code">ISO 9001</div>
+                        <div class="description">Sistemas de Gestión de Calidad</div>
+                    </div>
+                    <div class="standard-badge">
+                        <div class="code">BPL/GLP</div>
+                        <div class="description">Buenas Prácticas de Laboratorio</div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Conecta Conmigo</h2>
+                <div class="contact-wrapper">
+                    <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Si buscas a alguien apasionado por la excelencia analítica, la innovación y el cumplimiento normativo, me encantaría hablar contigo.</p>
+                    <form class="contact-form" action="https://formspree.io/f/REEMPLAZA_CON_TU_ID" method="POST">
+                        <input type="text" name="name" placeholder="Tu nombre" required aria-label="Nombre">
+                        <input type="email" name="email" placeholder="Tu email" required aria-label="Email">
+                        <textarea name="message" placeholder="Tu mensaje..." required aria-label="Mensaje"></textarea>
+                        <button type="submit" class="cta-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Paola - Química & Análisis Instrumental</p>
-        <p>Especialista en metodologías analíticas, validación y control de calidad | +5 años experiencia</p>
+        <p>&copy; 2026 Paola A. Guzmán - Química & Análisis Instrumental</p>
+        <p>Especialista en metodologías analíticas y bioanalíticas, validación y control de calidad | +5 años experiencia</p>
         <div class="social-links">
-            <a href="https://github.com/paola9ag" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/paola9ag" target="_blank">LinkedIn</a>
+            <a href="https://github.com/paola9ag" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/paola9ag" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
     </footer>
+
+    <script>
+        // Update copyright year automatically
+        document.querySelector('footer p:first-child').innerHTML = '&copy; ' + new Date().getFullYear() + ' Paola A. Guzmán - Química &amp; Análisis Instrumental';
+    </script>
 </body>
 </html>
